@@ -2,7 +2,7 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___View: ___VARIABLE_subclassesFrom___ {
+class ___VARIABLE_productName___View: ___VARIABLE_subclassesFrom___ {
 
     /*
     // Only override draw() if you perform custom drawing.

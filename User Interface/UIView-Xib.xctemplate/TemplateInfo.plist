@@ -2,39 +2,50 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>DefaultCompletionName</key>
-	<string>MyScene</string>
+	<key>Icon</key>
+	<string>TemplateIcon</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
 	<array>
 		<dict>
-			<key>Description</key>
-			<string>The name of the scene to create</string>
-			<key>Identifier</key>
-			<string>sceneName</string>
-			<key>Name</key>
-			<string>New Scene Name:</string>
-			<key>NotPersisted</key>
-			<true/>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>text</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___</string>
 			<key>Identifier</key>
 			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Class:</string>
+			<key>Description</key>
+			<string>The name of the UIView to create</string>
 			<key>Type</key>
-			<string>static</string>
+			<string>text</string>
+			<key>Default</key>
+			<string>Teste</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>subclassesFrom</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Subclass of:</string>
+			<key>Description</key>
+			<string>Sublasses From</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>NibView</string>
+			<key>Values</key>
+			<array>
+				<string>NibView</string>
+				<string>UIView</string>
+			</array>
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___View</string>
+			<string>___VARIABLE_productName:identifier___View</string>
 			<key>Description</key>
-			<string>The view name</string>
+			<string>View name</string>
 			<key>Identifier</key>
 			<string>viewName</string>
 			<key>Name</key>
@@ -44,32 +55,6 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
-		<dict>
-			<key>Default</key>
-			<string>UIView</string>
-			<key>Description</key>
-			<string>What view class to subclass for the new scene</string>
-			<key>FallbackHeader</key>
-			<string>#import &lt;UIKit/UIKit.h&gt;</string>
-			<key>Identifier</key>
-			<string>subclassesFrom</string>
-			<key>Name</key>
-			<string>Subclass of:</string>
-			<key>NotPersisted</key>
-			<true/>
-			<key>Required</key>
-			<string>YES</string>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
 	</array>
-	<key>Platforms</key>
-	<array>
-		<string>com.apple.platform.iphoneos</string>
-	</array>
-	<key>SortOrder</key>
-	<string>1</string>
-	<key>Summary</key>
-	<string>This generates a new view controller using Uncle Bob&apos;s clean architecture. Your view/view controller logic goes here.</string>
 </dict>
 </plist>
